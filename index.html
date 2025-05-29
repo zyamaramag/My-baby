@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="blurred-background"></div>
+
+    <nav class="navbar">
+        <div class="nav-brand">THE LOOK OF LOVE</div>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#gallery" class="active">Gallery</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#appreciation">Appreciation</a></li>
+            <li><a href="#music">Music</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Gallery Section -->
+        <section id="gallery" class="section active">
+            <div class="section-content">
+                <h2>Our Memories</h2>
+                <p class="love-message">If you miss us just click the pictures to zoom in on them, I might not be close to you but this site will remind you how I am committed to you without a doubt, I love you forever.</p>
+                
+                <div class="gallery-container">
+                    <!-- Portrait Photos -->
+                    <div class="gallery-section">
+                        <h3>Moments</h3>
+                        <div class="slideshow-container">
+                            <div class="slideshow" id="memoriesPortraitSlideshow">
+                                <!-- Slides will be added dynamically -->
+                            </div>
+                            <div class="slideshow-nav">
+                                <button class="prev">❮</button>
+                                <button class="next">❯</button>
+                            </div>
+                            <div class="slideshow-dots"></div>
+                        </div>
+                    </div>
+
+                    <!-- Landscape Photos -->
+                    <div class="gallery-section">
+                        <h3>Memories</h3>
+                        <div class="slideshow-container">
+                            <div class="slideshow" id="memoriesLandscapeSlideshow">
+                                <!-- Slides will be added dynamically -->
+                            </div>
+                            <div class="slideshow-nav">
+                                <button class="prev">❮</button>
+                                <button class="next">❯</button>
+                            </div>
+                            <div class="slideshow-dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="videos" class="section">
+            <div class="section-content">
+                <h2>Our Moments</h2>
+                <div class="gallery-container">
+                    <div class="gallery-section">
+                        <h3>Our Videos</h3>
+                        <div class="slideshow-container">
+                            <div class="slideshow" id="videoSlideshow">
+                                <!-- Video slides will be added dynamically via JavaScript -->
+                            </div>
+                            <div class="slideshow-nav">
+                                <button class="prev">❮</button>
+                                <button class="next">❯</button>
+                            </div>
+                            <div class="slideshow-dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appreciation Section -->
+        <section id="appreciation" class="section">
+            <div class="section-content">
+                <h2>My Appreciation</h2>
+                <p class="love-message">I LOVE THIS GIRL AND I ALWAYS MISS THIS GIRL!! THIS PAGE IS AN APPRECIATION PAGE FOR THE LOVE OF MY LIFE, I HOPE SHE KNOWS THE HEIGHTS I WOULD CLIMB FOR HER, BEST GIRL INDEED</p>
+                <div class="gallery-container">
+                    <!-- Portrait Photos -->
+                    <div class="gallery-section">
+                        <h3>Appreciation</h3>
+                        <div class="slideshow-container">
+                            <div class="slideshow" id="appreciationPortraitSlideshow">
+                                <!-- Slides will be added dynamically -->
+                            </div>
+                            <div class="slideshow-nav">
+                                <button class="prev">❮</button>
+                                <button class="next">❯</button>
+                            </div>
+                            <div class="slideshow-dots"></div>
+                        </div>
+                    </div>
+
+                    <!-- Landscape Photos -->
+                    <div class="gallery-section">
+                        <h3>Appreciation</h3>
+                        <div class="slideshow-container">
+                            <div class="slideshow" id="appreciationLandscapeSlideshow">
+                                <!-- Slides will be added dynamically -->
+                            </div>
+                            <div class="slideshow-nav">
+                                <button class="prev">❮</button>
+                                <button class="next">❯</button>
+                            </div>
+                            <div class="slideshow-dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music" class="section">
+            <div class="section-content">
+                <h2>My Voice For You</h2>
+                <p class="love-message">If you miss me, just press this link. Listen to my covers and hear the breath of this voice that speaks your name and only your name</p>
+                <div class="music-link">
+                    <a href="https://drive.google.com/drive/folders/1006cmFguXHMtSSQ_FR7jpf82WqC2Jdb3?usp=drive_link" target="_blank" class="drive-link">
+                        <i class="fab fa-google-drive"></i> Listen to My Covers
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for enlarged images -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <button class="modal-nav prev">❮</button>
+        <button class="modal-nav next">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
